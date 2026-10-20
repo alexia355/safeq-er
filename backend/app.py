@@ -1,103 +1,186 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
-from typing import Optional
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel, Field
+from typing import Optional, List, Dict, Any
 import heapq
 import time
 
-app = FastAPI(title="SafeQ ER")
+# Punctul de legătură: importăm graful și alocarea din alocare.py
+try:
+    from backend.alocare import cauta_camera_optima
+except ImportError:
+    from alocare import cauta_camera_optima
 
-from fastapi.middleware.cors import CORSMiddleware
+app = FastAPI(title="SafeQ ER API")
 
-# (imediat sub app = FastAPI(...) pui asta:)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # Permite oricui să trimită cereri către server
+    allow_origins=["*"],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# 1. Definim ce date trimite asistenta din frontend
+# Nivelurile conform SAFEQ.LEVELS din frontend
+LEVELS_CONFIG = {
+    "red":    {"base": 100, "label": "Roșu"},
+    "orange": {"base": 80,  "label": "Portocaliu"},
+    "yellow": {"base": 50,  "label": "Galben"},
+    "green":  {"base": 20,  "label": "Verde"},
+    "blue":   {"base": 10,  "label": "Albastru"}
+}
+WAIT_BONUS_PER_MIN = 0.5
 
-class TriageRequest(BaseModel):
-    puls: Optional[int] = None
-    tensiune_sistolica: Optional[int] = None
-    tensiune_diastolica: Optional[int] = None
-    spo2: Optional[int] = None
-    temperatura: Optional[float] = None
-    
-    # Bifele din secțiunea "Semne de alarmă" (dacă nu apasă, sunt False implicit)
-    nu_respira: bool = False
-    inconstient: bool = False
-    durere_toracica_severa: bool = False
-    sangerare_controlabila: bool = False
-    fractura: bool = False
-    
-    simptome: Optional[str] = ""
-
-# 2. Definim cum arată un pacient în sistemul nostru
+# 1. Clasa Patient concepută de Carla, extinsă cu status și nivel
 class Patient:
-    def __init__(self, token, scor_baza):
+    def __init__(self, token, level, scor_baza, symptoms="", vitals=None):
         self.token = token
+        self.level = level
         self.scor_baza = scor_baza
         self.timp_sosire = time.time()
+        self.symptoms = symptoms
+        self.vitals = vitals or {}
+        self.status = "waiting"
+        self.room = None
+        self.called_at = None
 
-    # Calculăm prioritatea dinamică (scor inițial + timp așteptare)
+    def wait_minutes(self):
+        return (time.time() - self.timp_sosire) / 60
+
     def prioritate_curenta(self):
-        minute_asteptare = (time.time() - self.timp_sosire) / 60
-        return self.scor_baza + (minute_asteptare * 0.5)
+        return self.scor_baza + (self.wait_minutes() * WAIT_BONUS_PER_MIN)
 
-    # Secretul Max-Heap-ului: elementul cu scor mai MARE are prioritate
+    # Max-Heap determinist: scorul mai mare are prioritate
     def __lt__(self, other):
         return self.prioritate_curenta() > other.prioritate_curenta()
 
-# Lista care va funcționa ca un Max-Heap
-coada_triaj = []
-numar_token = 101
+coada_triaj: List[Patient] = []
+chemati_istoric: List[Patient] = []
+numar_token = 0
 
-# 3. Ruta prin care adăugăm pacienți noi în coadă
-@app.post("/adauga-pacient")
-def adauga_pacient(date: TriageRequest):
+# 2. Modelele de intrare Pydantic potrivite cu api.js
+class VitalsInput(BaseModel):
+    pulse: Optional[float] = None
+    systolic: Optional[float] = None
+    diastolic: Optional[float] = None
+    spo2: Optional[float] = None
+    temp: Optional[float] = None
+
+class CreatePatientRequest(BaseModel):
+    vitals: VitalsInput
+    symptoms: Optional[str] = ""
+    red_flags: List[str] = Field(default_factory=list)
+
+class CallNextRequest(BaseModel):
+    room: Optional[str] = "Sala 1"
+
+class PriorityOverrideRequest(BaseModel):
+    level: str
+    justification: str
+
+def calculeaza_nivel(flags: List[str], vitals: VitalsInput) -> str:
+    """Regulile Manchester Triage Systems aliniate la frontend"""
+    if "not_breathing" in flags or "unconscious" in flags:
+        return "red"
+    if "chest_pain" in flags or (vitals.spo2 is not None and vitals.spo2 < 90) or \
+       (vitals.systolic is not None and vitals.systolic > 180):
+        return "orange"
+    if "bleeding" in flags or "fracture" in flags:
+        return "yellow"
+    return "green"
+
+# ==========================================
+# RUTELE OFICIALE API PENTRU FRONTEND
+# ==========================================
+
+# 1. Adăugare pacient din triage.html
+@app.post("/api/patients")
+def adauga_pacient_api(date: CreatePatientRequest):
     global numar_token
-    
-    # Calculăm scorul (simplificat)
-    scor = 20 # Cod Verde implicit
-    
-    # 1. Dacă a bifat că nu respiră sau e inconștient -> direct Cod Roșu (100)
-    if date.nu_respira or date.inconstient or (date.spo2 is not None and date.spo2 < 90):
-        scor = 100
-        
-    # 2. Dacă are durere toracică sau tensiunea sistolică e uriașă -> Cod Portocaliu (80)
-    elif date.durere_toracica_severa or (date.spo2 is not None and date.spo2 < 92) or \
-         (date.tensiune_sistolica is not None and date.tensiune_sistolica > 180):
-        scor = 80
-        
-    # 3. Fracturi sau sângerări -> Cod Galben (50)
-    elif date.sangerare_controlabila or date.fractura:
-        scor = 50
-
-    # Generăm jetonul anonim
-    token = f"#A-{numar_token}"
     numar_token += 1
+    token = f"A-{str(numar_token).zfill(3)}"
     
-    # Adăugăm în Max-Heap
-    pacient_nou = Patient(token, scor)
+    level = calculeaza_nivel(date.red_flags, date.vitals)
+    scor = LEVELS_CONFIG[level]["base"]
+    
+    pacient_nou = Patient(token, level, scor, date.symptoms or "", date.vitals.dict())
     heapq.heappush(coada_triaj, pacient_nou)
     
-    return {"mesaj": "Pacient adăugat cu succes!", "token": token, "scor_atribuit": scor}
+    return {"token": token, "level": level, "score": scor}
 
-
-
-# 4. Ruta pentru a vedea panoul din sala de așteptare
-@app.get("/coada-pacienti")
-def vezi_coada():
-    # Sortăm pacienții descrescător după prioritatea lor curentă
-    pacienti_ordonati = sorted(coada_triaj, key=lambda p: p.prioritate_curenta(), reverse=True)
+# 2. Afișare coadă activă pentru dashboard.html
+@app.get("/api/queue")
+def vezi_coada_api():
+    in_asteptare = [p for p in coada_triaj if p.status == "waiting"]
+    pacienti_ordonati = sorted(in_asteptare, key=lambda p: p.prioritate_curenta(), reverse=True)
     
-    rezultat = []
-    for p in pacienti_ordonati:
-        rezultat.append({
+    return [
+        {
             "token": p.token,
-            "scor_curent": round(p.prioritate_curenta(), 1)
-        })
-        
-    return {"in_asteptare": rezultat}
+            "level": p.level,
+            "score": round(p.prioritate_curenta(), 1),
+            "wait_min": int(p.wait_minutes()),
+            "symptoms": p.symptoms,
+            "room": p.room
+        }
+        for p in pacienti_ordonati
+    ]
+
+# 3. Preluare pacient următor (Max-Heap + BFS din alocare.py)
+@app.post("/api/call-next")
+def cheama_urmatorul_api(date: CallNextRequest):
+    in_asteptare = [p for p in coada_triaj if p.status == "waiting"]
+    if not in_asteptare:
+        return {"token": None}
+    
+    heapq.heapify(coada_triaj)
+    
+    while coada_triaj:
+        candidat = heapq.heappop(coada_triaj)
+        if candidat.status == "waiting":
+            camera_alocata = cauta_camera_optima(candidat.level, date.room)
+            candidat.status = "called"
+            candidat.room = camera_alocata
+            candidat.called_at = time.time()
+            
+            chemati_istoric.insert(0, candidat)
+            return {
+                "token": candidat.token,
+                "room": candidat.room,
+                "level": candidat.level
+            }
+            
+    return {"token": None}
+
+# 4. Modificare manuală / Retriaj din dialogul din dashboard.html
+@app.post("/api/patients/{token}/priority")
+def retriaj_api(token: str, date: PriorityOverrideRequest):
+    if not date.justification.strip():
+        raise HTTPException(status_code=400, detail="Justificarea este obligatorie.")
+    if date.level not in LEVELS_CONFIG:
+        raise HTTPException(status_code=400, detail="Nivel invalid.")
+
+    for p in coada_triaj:
+        if p.token == token and p.status == "waiting":
+            p.level = date.level
+            p.scor_baza = LEVELS_CONFIG[date.level]["base"]
+            p.timp_sosire = time.time()  # resetare timp așteptare conform modelului
+            heapq.heapify(coada_triaj)
+            return {"ok": True}
+
+    raise HTTPException(status_code=404, detail="Pacientul nu a fost găsit în coadă.")
+
+# 5. Lista pacienților chemați pentru avizierul public display.html
+@app.get("/api/called")
+def vezi_chemati_api():
+    return [
+        {
+            "token": p.token,
+            "level": p.level,
+            "score": round(p.prioritate_curenta(), 1),
+            "wait_min": int(p.wait_minutes()),
+            "symptoms": p.symptoms,
+            "room": p.room
+        }
+        for p in chemati_istoric[:4]
+    ]
