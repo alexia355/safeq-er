@@ -1,0 +1,28 @@
+<!doctype html><html lang="ro"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Coadă – SafeQ ER</title>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="top"><strong>SafeQ ER</strong>
+<nav aria-label="Principal">
+<a href="triage.html" >Recepție</a>
+<a href="dashboard.html" aria-current="page">Coadă</a>
+<a href="display.html" target="_blank">Ecran sală de așteptare</a>
+</nav></header>
+<main>
+<h1>Coada de pacienți</h1>
+<div class="panel" style="display:flex;gap:1rem;align-items:end;flex-wrap:wrap">
+  <div><label for="room">Sala liberă</label><select id="room"></select></div>
+  <button id="next">Cheamă următorul pacient</button>
+  <div id="msg" class="msg" role="status"></div>
+</div>
+<div class="panel"><table><thead><tr><th>Token</th><th>Prioritate</th><th>Scor</th><th>Așteptare</th><th>Simptome</th><th></th></tr></thead>
+<tbody id="rows"></tbody></table><div id="empty" class="empty" hidden>Niciun pacient în așteptare.</div></div>
+</main>
+<dialog id="dlg"><form method="dialog" id="ovf">
+  <h2>Modifică prioritatea <span id="dtok"></span></h2>
+  <label for="nl">Nivel nou</label><select id="nl"></select>
+  <label for="just" style="margin-top:.75rem">Justificare (obligatorie)</label><textarea id="just" rows="3" required></textarea>
+  <p style="display:flex;gap:.5rem;justify-content:flex-end"><button type="button" class="secondary" id="cancel">Anulează</button><button type="submit">Salvează</button></p>
+</form></dialog>
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/dashboard.js"></script>
+</body></html>

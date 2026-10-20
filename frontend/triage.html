@@ -1,0 +1,43 @@
+<!doctype html><html lang="ro"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Recepție – SafeQ ER</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="top"><strong>SafeQ ER</strong>
+<nav aria-label="Principal">
+<a href="triage.html" aria-current="page">Recepție</a>
+<a href="dashboard.html" >Coadă</a>
+<a href="display.html" target="_blank">Ecran sală de așteptare</a>
+</nav></header>
+<main>
+<h1>Înregistrare pacient</h1>
+<form id="f" class="panel">
+  <h2>Semne vitale</h2>
+  <div class="grid">
+    <div><label for="pulse">Puls (bpm)</label><input id="pulse" type="number" min="0" max="300" required></div>
+    <div><label for="sys">Tensiune sistolică</label><input id="sys" type="number" min="0" max="300" required></div>
+    <div><label for="dia">Tensiune diastolică</label><input id="dia" type="number" min="0" max="200" required></div>
+    <div><label for="spo2">SpO₂ (%)</label><input id="spo2" type="number" min="0" max="100" required></div>
+    <div><label for="temp">Temperatură (°C)</label><input id="temp" type="number" step="0.1" min="30" max="45" required></div>
+  </div>
+  <fieldset><legend>Semne de alarmă</legend>
+    <label><input type="checkbox" name="flag" value="not_breathing"> Nu respiră</label>
+    <label><input type="checkbox" name="flag" value="unconscious"> Inconștient</label>
+    <label><input type="checkbox" name="flag" value="chest_pain"> Durere toracică severă</label>
+    <label><input type="checkbox" name="flag" value="bleeding"> Sângerare controlabilă</label>
+    <label><input type="checkbox" name="flag" value="fracture"> Fractură</label>
+  </fieldset>
+  <label for="sym">Simptome (vizibile doar personalului)</label>
+  <textarea id="sym" rows="3"></textarea>
+  <p><button type="submit">Generează token</button></p>
+  <div id="msg" class="msg" role="status"></div>
+</form>
+<section id="result" class="panel" hidden aria-live="polite">
+  <h2>Token pacient</h2><div class="big-token" id="tok"></div>
+  <p>Prioritate sugerată: <span id="lvl"></span> · scor <span id="scr"></span>.
+     Dați pacientului doar acest token; sistemul sugerează, asistenta decide.</p>
+  <button class="secondary" id="again">Pacient nou</button>
+</section>
+</main>
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/triage.js"></script>
+</body></html>
