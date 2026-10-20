@@ -1,15 +1,38 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from typing import Optional
 import heapq
 import time
 
 app = FastAPI(title="SafeQ ER")
 
+from fastapi.middleware.cors import CORSMiddleware
+
+# (imediat sub app = FastAPI(...) pui asta:)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # Permite oricui să trimită cereri către server
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # 1. Definim ce date trimite asistenta din frontend
+
 class TriageRequest(BaseModel):
-    spo2: int
-    tensiune: int
-    durere_toracica: bool
+    puls: Optional[int] = None
+    tensiune_sistolica: Optional[int] = None
+    tensiune_diastolica: Optional[int] = None
+    spo2: Optional[int] = None
+    temperatura: Optional[float] = None
+    
+    # Bifele din secțiunea "Semne de alarmă" (dacă nu apasă, sunt False implicit)
+    nu_respira: bool = False
+    inconstient: bool = False
+    durere_toracica_severa: bool = False
+    sangerare_controlabila: bool = False
+    fractura: bool = False
+    
+    simptome: Optional[str] = ""
 
 # 2. Definim cum arată un pacient în sistemul nostru
 class Patient:
@@ -38,10 +61,19 @@ def adauga_pacient(date: TriageRequest):
     
     # Calculăm scorul (simplificat)
     scor = 20 # Cod Verde implicit
-    if date.durere_toracica or date.spo2 < 90:
-        scor = 100 # Cod Roșu
-    elif date.spo2 < 95 or date.tensiune > 160:
-        scor = 50 # Cod Galben
+    
+    # 1. Dacă a bifat că nu respiră sau e inconștient -> direct Cod Roșu (100)
+    if date.nu_respira or date.inconstient or (date.spo2 is not None and date.spo2 < 90):
+        scor = 100
+        
+    # 2. Dacă are durere toracică sau tensiunea sistolică e uriașă -> Cod Portocaliu (80)
+    elif date.durere_toracica_severa or (date.spo2 is not None and date.spo2 < 92) or \
+         (date.tensiune_sistolica is not None and date.tensiune_sistolica > 180):
+        scor = 80
+        
+    # 3. Fracturi sau sângerări -> Cod Galben (50)
+    elif date.sangerare_controlabila or date.fractura:
+        scor = 50
 
     # Generăm jetonul anonim
     token = f"#A-{numar_token}"
