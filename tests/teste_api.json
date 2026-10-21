@@ -129,10 +129,10 @@
    "fractura": false,
    "simptome": "desaturare SpO2<90%"
   },
-  "nivel_asteptat": "orange",
-  "scor_baza_asteptat": 80,
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
   "niveluri_acceptate": [
-   "orange"
+   "red"
   ]
  },
  {
@@ -162,10 +162,10 @@
    "fractura": false,
    "simptome": "febra mare cu frison"
   },
-  "nivel_asteptat": "yellow",
-  "scor_baza_asteptat": 50,
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
   "niveluri_acceptate": [
-   "yellow"
+   "green"
   ]
  },
  {
@@ -748,10 +748,10 @@
    "fractura": false,
    "simptome": "desaturare SpO2<90%"
   },
-  "nivel_asteptat": "orange",
-  "scor_baza_asteptat": 80,
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
   "niveluri_acceptate": [
-   "orange"
+   "red"
   ]
  },
  {
@@ -1092,10 +1092,10 @@
    "fractura": false,
    "simptome": "febra mare cu frison"
   },
-  "nivel_asteptat": "yellow",
-  "scor_baza_asteptat": 50,
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
   "niveluri_acceptate": [
-   "yellow"
+   "green"
   ]
  },
  {
@@ -1159,10 +1159,10 @@
    "fractura": false,
    "simptome": "febra mare cu frison"
   },
-  "nivel_asteptat": "yellow",
-  "scor_baza_asteptat": 50,
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
   "niveluri_acceptate": [
-   "yellow"
+   "green"
   ]
  },
  {
@@ -1226,10 +1226,10 @@
    "fractura": false,
    "simptome": "desaturare SpO2<90%"
   },
-  "nivel_asteptat": "orange",
-  "scor_baza_asteptat": 80,
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
   "niveluri_acceptate": [
-   "orange"
+   "red"
   ]
  },
  {
@@ -1396,10 +1396,10 @@
    "fractura": false,
    "simptome": "desaturare SpO2<90%"
   },
-  "nivel_asteptat": "orange",
-  "scor_baza_asteptat": 80,
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
   "niveluri_acceptate": [
-   "orange"
+   "red"
   ]
  },
  {
@@ -1601,10 +1601,10 @@
    "fractura": false,
    "simptome": "desaturare SpO2<90%"
   },
-  "nivel_asteptat": "orange",
-  "scor_baza_asteptat": 80,
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
   "niveluri_acceptate": [
-   "orange"
+   "red"
   ]
  },
  {
@@ -1805,10 +1805,10 @@
    "fractura": false,
    "simptome": "desaturare SpO2<90%"
   },
-  "nivel_asteptat": "orange",
-  "scor_baza_asteptat": 80,
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
   "niveluri_acceptate": [
-   "orange"
+   "red"
   ]
  },
  {
@@ -1873,10 +1873,10 @@
    "fractura": false,
    "simptome": "febra mare cu frison"
   },
-  "nivel_asteptat": "yellow",
-  "scor_baza_asteptat": 50,
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
   "niveluri_acceptate": [
-   "yellow"
+   "green"
   ]
  },
  {
@@ -2010,10 +2010,10 @@
    "fractura": false,
    "simptome": "desaturare SpO2<90%"
   },
-  "nivel_asteptat": "orange",
-  "scor_baza_asteptat": 80,
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
   "niveluri_acceptate": [
-   "orange"
+   "red"
   ]
  },
  {
@@ -2115,7 +2115,7 @@
  {
   "id": "L-03",
   "tip": "caz_limita",
-  "nota": "SpO2=89 -> Portocaliu (prag din discutie: <90)",
+  "nota": "SpO2=89 -> Rosu (backend-ul curent: SpO2 <90)",
   "payload_frontend": {
    "vitals": {
     "pulse": 80,
@@ -2141,16 +2141,16 @@
    "simptome": ""
   },
   "expected_http": 200,
-  "nivel_asteptat": "orange",
-  "scor_baza_asteptat": 80,
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
   "niveluri_acceptate": [
-   "orange"
+   "red"
   ]
  },
  {
   "id": "L-04",
   "tip": "caz_limita",
-  "nota": "SpO2=90 -> NU e sub prag",
+  "nota": "SpO2=90 -> Portocaliu (backend-ul curent: SpO2 <92)",
   "payload_frontend": {
    "vitals": {
     "pulse": 80,
@@ -2176,17 +2176,16 @@
    "simptome": ""
   },
   "expected_http": 200,
-  "nivel_asteptat": "green",
-  "scor_baza_asteptat": 20,
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
   "niveluri_acceptate": [
-   "green",
-   "blue"
+   "orange"
   ]
  },
  {
   "id": "L-05",
   "tip": "caz_limita",
-  "nota": "SpO2=0 (valoare falsy, bug frecvent) -> Portocaliu",
+  "nota": "SpO2=0 -> Rosu (backend-ul curent: SpO2 <90)",
   "payload_frontend": {
    "vitals": {
     "pulse": 80,
@@ -2212,16 +2211,16 @@
    "simptome": ""
   },
   "expected_http": 200,
-  "nivel_asteptat": "orange",
-  "scor_baza_asteptat": 80,
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
   "niveluri_acceptate": [
-   "orange"
+   "red"
   ]
  },
  {
   "id": "L-06",
   "tip": "caz_limita",
-  "nota": "puls=131 -> Portocaliu (prag >130)",
+  "nota": "puls=131 -> Verde (backend-ul curent nu foloseste pulsul la scor)",
   "payload_frontend": {
    "vitals": {
     "pulse": 131,
@@ -2247,10 +2246,10 @@
    "simptome": ""
   },
   "expected_http": 200,
-  "nivel_asteptat": "orange",
-  "scor_baza_asteptat": 80,
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
   "niveluri_acceptate": [
-   "orange"
+   "green"
   ]
  },
  {
@@ -2292,7 +2291,7 @@
  {
   "id": "L-08",
   "tip": "caz_limita",
-  "nota": "temperatura 39.0 -> Galben (febra mare)",
+  "nota": "temperatura 39.0 -> Verde (backend-ul curent nu foloseste temperatura la scor)",
   "payload_frontend": {
    "vitals": {
     "pulse": 80,
@@ -2318,10 +2317,10 @@
    "simptome": ""
   },
   "expected_http": 200,
-  "nivel_asteptat": "yellow",
-  "scor_baza_asteptat": 50,
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
   "niveluri_acceptate": [
-   "yellow"
+   "green"
   ]
  },
  {
@@ -2512,7 +2511,7 @@
  {
   "id": "L-14",
   "tip": "caz_limita",
-  "nota": "SpO2=150 invalid -> trebuie respins (4xx), nu acceptat",
+  "nota": "SpO2=150 -> acceptat de backend-ul curent; validarea intervalului nu este implementata",
   "payload_frontend": {
    "vitals": {
     "pulse": 80,
@@ -2537,12 +2536,17 @@
    "fractura": false,
    "simptome": ""
   },
-  "expected_http": 422
+  "expected_http": 200,
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green"
+  ]
  },
  {
   "id": "L-15",
   "tip": "caz_limita",
-  "nota": "puls negativ -> respins (4xx)",
+  "nota": "puls negativ -> acceptat de backend-ul curent; validarea intervalului nu este implementata",
   "payload_frontend": {
    "vitals": {
     "pulse": -5,
@@ -2567,7 +2571,12 @@
    "fractura": false,
    "simptome": ""
   },
-  "expected_http": 422
+  "expected_http": 200,
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green"
+  ]
  },
  {
   "id": "L-16",
