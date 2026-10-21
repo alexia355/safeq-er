@@ -1,0 +1,151 @@
+[
+ {
+  "id": "Q-01",
+  "nume": "Ordine dupa gravitate, sosiri simultane",
+  "sosiri": [
+   {
+    "token": "a",
+    "nivel": "green",
+    "minut": 0
+   },
+   {
+    "token": "b",
+    "nivel": "red",
+    "minut": 0
+   },
+   {
+    "token": "c",
+    "nivel": "yellow",
+    "minut": 0
+   },
+   {
+    "token": "d",
+    "nivel": "orange",
+    "minut": 0
+   }
+  ],
+  "la_minut": 0,
+  "ordine_asteptata": [
+   "b",
+   "d",
+   "c",
+   "a"
+  ]
+ },
+ {
+  "id": "Q-02",
+  "nume": "Acelasi nivel: cel mai vechi primul",
+  "sosiri": [
+   {
+    "token": "a",
+    "nivel": "yellow",
+    "minut": 0
+   },
+   {
+    "token": "b",
+    "nivel": "yellow",
+    "minut": 20
+   }
+  ],
+  "la_minut": 20,
+  "scoruri": {
+   "a": 60.0,
+   "b": 50.0
+  },
+  "ordine_asteptata": [
+   "a",
+   "b"
+  ]
+ },
+ {
+  "id": "Q-03",
+  "nume": "Galben vechi depaseste Portocaliu nou (fara plafon)",
+  "sosiri": [
+   {
+    "token": "a",
+    "nivel": "yellow",
+    "minut": 0
+   },
+   {
+    "token": "b",
+    "nivel": "orange",
+    "minut": 70
+   }
+  ],
+  "la_minut": 70,
+  "scoruri": {
+   "a": 85.0,
+   "b": 80.0
+  },
+  "ordine_asteptata": [
+   "a",
+   "b"
+  ]
+ },
+ {
+  "id": "Q-04",
+  "nume": "RISC: Albastru vechi depaseste Rosu nou (comportament nedorit; cu plafon, Rosu trebuie primul)",
+  "sosiri": [
+   {
+    "token": "a",
+    "nivel": "blue",
+    "minut": 0
+   },
+   {
+    "token": "b",
+    "nivel": "red",
+    "minut": 240
+   }
+  ],
+  "la_minut": 240,
+  "scoruri_fara_plafon": {
+   "a": 130.0,
+   "b": 100.0
+  },
+  "ordine_fara_plafon": [
+   "a",
+   "b"
+  ],
+  "ordine_dorita_cu_plafon": [
+   "b",
+   "a"
+  ]
+ },
+ {
+  "id": "Q-05",
+  "nume": "Cheama urmatorul scoate pacientul din coada",
+  "pasi": [
+   "adauga red",
+   "adauga green",
+   "cheama-urmatorul -> red",
+   "coada contine doar green",
+   "cheama-urmatorul -> green",
+   "cheama-urmatorul -> coada goala (token null, nu eroare)"
+  ]
+ },
+ {
+  "id": "Q-06",
+  "nume": "Suprascriere prioritate cere justificare",
+  "pasi": [
+   "adauga green",
+   "schimba nivel in orange cu justificare goala -> eroare",
+   "schimba cu justificare -> ok, pacientul trece in fata unui yellow"
+  ]
+ },
+ {
+  "id": "Q-07",
+  "nume": "Sali: o sala ocupata nu se aloca din nou",
+  "pasi": [
+   "2 pacienti red consecutivi -> sali diferite",
+   "3 red cand salile 1 si 2 sunt ocupate -> alta sala sau 'in asteptare', nu aceeasi sala"
+  ]
+ },
+ {
+  "id": "Q-08",
+  "nume": "Anonimizare",
+  "pasi": [
+   "/queue si /called nu contin nume, CNP; display.html arata doar token + sala",
+   "simptomele apar doar in dashboard-ul personalului"
+  ]
+ }
+]

@@ -1,0 +1,113 @@
+[
+ {
+  "nume": "Rosu depaseste orice",
+  "pacienti": [
+   [
+    "A-1",
+    "Galben",
+    0
+   ],
+   [
+    "A-2",
+    "Rosu",
+    5
+   ]
+  ],
+  "la_minut": 5,
+  "asteptat_primul": "A-2"
+ },
+ {
+  "nume": "Acelasi cod, cel mai vechi primul",
+  "pacienti": [
+   [
+    "A-1",
+    "Galben",
+    0
+   ],
+   [
+    "A-2",
+    "Galben",
+    20
+   ]
+  ],
+  "la_minut": 20,
+  "prioritati": {
+   "A-1": 60.0,
+   "A-2": 50.0
+  },
+  "asteptat_primul": "A-1"
+ },
+ {
+  "nume": "Aging: Galben depaseste Portocaliu dupa >60 min diferenta",
+  "pacienti": [
+   [
+    "A-1",
+    "Galben",
+    0
+   ],
+   [
+    "A-2",
+    "Portocaliu",
+    70
+   ]
+  ],
+  "la_minut": 70,
+  "prioritati": {
+   "A-1": 85.0,
+   "A-2": 80.0
+  },
+  "asteptat_primul": "A-1"
+ },
+ {
+  "nume": "RISC: Albastru poate depasi Rosu cu formula nelimitata",
+  "pacienti": [
+   [
+    "A-1",
+    "Albastru",
+    0
+   ],
+   [
+    "A-2",
+    "Rosu",
+    240
+   ]
+  ],
+  "la_minut": 240,
+  "prioritati": {
+   "A-1": 130.0,
+   "A-2": 100.0
+  },
+  "asteptat_primul": "A-1 (comportament nedorit; verificati cu mentorul / plafonati aging-ul)"
+ },
+ {
+  "nume": "Sosiri simultane, acelasi cod",
+  "pacienti": [
+   [
+    "A-1",
+    "Verde",
+    10
+   ],
+   [
+    "A-2",
+    "Verde",
+    10
+   ]
+  ],
+  "la_minut": 10,
+  "asteptat_primul": "departajare deterministica (ex. token mai mic)"
+ },
+ {
+  "nume": "Sectie plina -> BFS",
+  "setup": "toate paturile din CRIT ocupate",
+  "pacient": [
+   "A-1",
+   "Portocaliu"
+  ],
+  "asteptat": "rutat spre sectia vecina cu pat liber (GEN sau RESUS)"
+ },
+ {
+  "nume": "Toate paturile ocupate",
+  "setup": "niciun pat liber",
+  "asteptat": "pacientul ramane in heap, UI arata 'in asteptare'"
+ }
+]
