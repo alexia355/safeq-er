@@ -1,0 +1,2608 @@
+[
+ {
+  "id": "A-101",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 99,
+    "systolic": 136,
+    "diastolic": 90,
+    "spo2": 98,
+    "temp": 37.2
+   },
+   "symptoms": "entorsa",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 99,
+   "tensiune_sistolica": 136,
+   "tensiune_diastolica": 90,
+   "spo2": 98,
+   "temperatura": 37.2,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "entorsa"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-102",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 80,
+    "systolic": 119,
+    "diastolic": 83,
+    "spo2": 99,
+    "temp": 37.0
+   },
+   "symptoms": "fractura inchisa",
+   "red_flags": [
+    "fracture"
+   ]
+  },
+  "payload_backend": {
+   "puls": 80,
+   "tensiune_sistolica": 119,
+   "tensiune_diastolica": 83,
+   "spo2": 99,
+   "temperatura": 37.0,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": true,
+   "simptome": "fractura inchisa"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-103",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 65,
+    "systolic": 124,
+    "diastolic": 81,
+    "spo2": 99,
+    "temp": 36.6
+   },
+   "symptoms": "problema dermatologica usoara",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 65,
+   "tensiune_sistolica": 124,
+   "tensiune_diastolica": 81,
+   "spo2": 99,
+   "temperatura": 36.6,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "problema dermatologica usoara"
+  },
+  "nivel_asteptat": "blue",
+  "scor_baza_asteptat": 10,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-104",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 119,
+    "systolic": 110,
+    "diastolic": 84,
+    "spo2": 83,
+    "temp": 36.7
+   },
+   "symptoms": "desaturare SpO2<90%",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 119,
+   "tensiune_sistolica": 110,
+   "tensiune_diastolica": 84,
+   "spo2": 83,
+   "temperatura": 36.7,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "desaturare SpO2<90%"
+  },
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "A-105",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 78,
+    "systolic": 148,
+    "diastolic": 85,
+    "spo2": 94,
+    "temp": 39.5
+   },
+   "symptoms": "febra mare cu frison",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 78,
+   "tensiune_sistolica": 148,
+   "tensiune_diastolica": 85,
+   "spo2": 94,
+   "temperatura": 39.5,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "febra mare cu frison"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-106",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 88,
+    "systolic": 141,
+    "diastolic": 85,
+    "spo2": 98,
+    "temp": 38.0
+   },
+   "symptoms": "varsaturi incoercibile",
+   "red_flags": [
+    "bleeding"
+   ]
+  },
+  "payload_backend": {
+   "puls": 88,
+   "tensiune_sistolica": 141,
+   "tensiune_diastolica": 85,
+   "spo2": 98,
+   "temperatura": 38.0,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": true,
+   "fractura": false,
+   "simptome": "varsaturi incoercibile"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-107",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 83,
+    "systolic": 114,
+    "diastolic": 77,
+    "spo2": 99,
+    "temp": 37.0
+   },
+   "symptoms": "durere cronica de saptamani",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 83,
+   "tensiune_sistolica": 114,
+   "tensiune_diastolica": 77,
+   "spo2": 99,
+   "temperatura": 37.0,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "durere cronica de saptamani"
+  },
+  "nivel_asteptat": "blue",
+  "scor_baza_asteptat": 10,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-108",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 64,
+    "systolic": 121,
+    "diastolic": 77,
+    "spo2": 100,
+    "temp": 36.4
+   },
+   "symptoms": "reteta expirata",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 64,
+   "tensiune_sistolica": 121,
+   "tensiune_diastolica": 77,
+   "spo2": 100,
+   "temperatura": 36.4,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "reteta expirata"
+  },
+  "nivel_asteptat": "blue",
+  "scor_baza_asteptat": 10,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-109",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 87,
+    "systolic": 130,
+    "diastolic": 75,
+    "spo2": 100,
+    "temp": 36.3
+   },
+   "symptoms": "febra mica",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 87,
+   "tensiune_sistolica": 130,
+   "tensiune_diastolica": 75,
+   "spo2": 100,
+   "temperatura": 36.3,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "febra mica"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-110",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 110,
+    "systolic": 138,
+    "diastolic": 81,
+    "spo2": 99,
+    "temp": 39.6
+   },
+   "symptoms": "fractura inchisa",
+   "red_flags": [
+    "fracture"
+   ]
+  },
+  "payload_backend": {
+   "puls": 110,
+   "tensiune_sistolica": 138,
+   "tensiune_diastolica": 81,
+   "spo2": 99,
+   "temperatura": 39.6,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": true,
+   "simptome": "fractura inchisa"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-111",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 124,
+    "systolic": 145,
+    "diastolic": 65,
+    "spo2": 92,
+    "temp": 36.0
+   },
+   "symptoms": "durere toracica severa tip infarct",
+   "red_flags": [
+    "chest_pain"
+   ]
+  },
+  "payload_backend": {
+   "puls": 124,
+   "tensiune_sistolica": 145,
+   "tensiune_diastolica": 65,
+   "spo2": 92,
+   "temperatura": 36.0,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": true,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "durere toracica severa tip infarct"
+  },
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "A-112",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 92,
+    "systolic": 134,
+    "diastolic": 75,
+    "spo2": 96,
+    "temp": 37.8
+   },
+   "symptoms": "simptome de raceala",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 92,
+   "tensiune_sistolica": 134,
+   "tensiune_diastolica": 75,
+   "spo2": 96,
+   "temperatura": 37.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "simptome de raceala"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-113",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 98,
+    "systolic": 117,
+    "diastolic": 74,
+    "spo2": 99,
+    "temp": 36.8
+   },
+   "symptoms": "durere moderata 5-7/10",
+   "red_flags": [
+    "bleeding"
+   ]
+  },
+  "payload_backend": {
+   "puls": 98,
+   "tensiune_sistolica": 117,
+   "tensiune_diastolica": 74,
+   "spo2": 99,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": true,
+   "fractura": false,
+   "simptome": "durere moderata 5-7/10"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-114",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 61,
+    "systolic": 120,
+    "diastolic": 85,
+    "spo2": 96,
+    "temp": 37.9
+   },
+   "symptoms": "simptome de raceala",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 61,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 85,
+   "spo2": 96,
+   "temperatura": 37.9,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "simptome de raceala"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-115",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 80,
+    "systolic": 120,
+    "diastolic": 70,
+    "spo2": 98,
+    "temp": 37.9
+   },
+   "symptoms": "fractura inchisa",
+   "red_flags": [
+    "fracture"
+   ]
+  },
+  "payload_backend": {
+   "puls": 80,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 70,
+   "spo2": 98,
+   "temperatura": 37.9,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": true,
+   "simptome": "fractura inchisa"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-116",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 95,
+    "systolic": 114,
+    "diastolic": 85,
+    "spo2": 97,
+    "temp": 36.7
+   },
+   "symptoms": "febra mica",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 95,
+   "tensiune_sistolica": 114,
+   "tensiune_diastolica": 85,
+   "spo2": 97,
+   "temperatura": 36.7,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "febra mica"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-117",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 161,
+    "systolic": 62,
+    "diastolic": 39,
+    "spo2": 71,
+    "temp": 35.6
+   },
+   "symptoms": "hemoragie masiva activa",
+   "red_flags": [
+    "not_breathing"
+   ]
+  },
+  "payload_backend": {
+   "puls": 161,
+   "tensiune_sistolica": 62,
+   "tensiune_diastolica": 39,
+   "spo2": 71,
+   "temperatura": 35.6,
+   "nu_respira": true,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "hemoragie masiva activa"
+  },
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
+  "niveluri_acceptate": [
+   "red"
+  ]
+ },
+ {
+  "id": "A-118",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 96,
+    "systolic": 119,
+    "diastolic": 69,
+    "spo2": 93,
+    "temp": 38.3
+   },
+   "symptoms": "sangerare controlabila",
+   "red_flags": [
+    "bleeding"
+   ]
+  },
+  "payload_backend": {
+   "puls": 96,
+   "tensiune_sistolica": 119,
+   "tensiune_diastolica": 69,
+   "spo2": 93,
+   "temperatura": 38.3,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": true,
+   "fractura": false,
+   "simptome": "sangerare controlabila"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-119",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 82,
+    "systolic": 110,
+    "diastolic": 72,
+    "spo2": 97,
+    "temp": 36.5
+   },
+   "symptoms": "reteta expirata",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 82,
+   "tensiune_sistolica": 110,
+   "tensiune_diastolica": 72,
+   "spo2": 97,
+   "temperatura": 36.5,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "reteta expirata"
+  },
+  "nivel_asteptat": "blue",
+  "scor_baza_asteptat": 10,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-120",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 38,
+    "systolic": 82,
+    "diastolic": 37,
+    "spo2": 66,
+    "temp": 35.8
+   },
+   "symptoms": "hemoragie masiva activa",
+   "red_flags": [
+    "not_breathing"
+   ]
+  },
+  "payload_backend": {
+   "puls": 38,
+   "tensiune_sistolica": 82,
+   "tensiune_diastolica": 37,
+   "spo2": 66,
+   "temperatura": 35.8,
+   "nu_respira": true,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "hemoragie masiva activa"
+  },
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
+  "niveluri_acceptate": [
+   "red"
+  ]
+ },
+ {
+  "id": "A-121",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 87,
+    "systolic": 156,
+    "diastolic": 91,
+    "spo2": 93,
+    "temp": 36.5
+   },
+   "symptoms": "varsaturi incoercibile",
+   "red_flags": [
+    "bleeding"
+   ]
+  },
+  "payload_backend": {
+   "puls": 87,
+   "tensiune_sistolica": 156,
+   "tensiune_diastolica": 91,
+   "spo2": 93,
+   "temperatura": 36.5,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": true,
+   "fractura": false,
+   "simptome": "varsaturi incoercibile"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-122",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 136,
+    "systolic": 176,
+    "diastolic": 96,
+    "spo2": 88,
+    "temp": 36.2
+   },
+   "symptoms": "desaturare SpO2<90%",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 136,
+   "tensiune_sistolica": 176,
+   "tensiune_diastolica": 96,
+   "spo2": 88,
+   "temperatura": 36.2,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "desaturare SpO2<90%"
+  },
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "A-123",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 67,
+    "systolic": 135,
+    "diastolic": 73,
+    "spo2": 98,
+    "temp": 36.5
+   },
+   "symptoms": "durere cronica de saptamani",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 67,
+   "tensiune_sistolica": 135,
+   "tensiune_diastolica": 73,
+   "spo2": 98,
+   "temperatura": 36.5,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "durere cronica de saptamani"
+  },
+  "nivel_asteptat": "blue",
+  "scor_baza_asteptat": 10,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-124",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 104,
+    "systolic": 116,
+    "diastolic": 82,
+    "spo2": 94,
+    "temp": 39.3
+   },
+   "symptoms": "fractura inchisa",
+   "red_flags": [
+    "fracture"
+   ]
+  },
+  "payload_backend": {
+   "puls": 104,
+   "tensiune_sistolica": 116,
+   "tensiune_diastolica": 82,
+   "spo2": 94,
+   "temperatura": 39.3,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": true,
+   "simptome": "fractura inchisa"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-125",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 94,
+    "systolic": 113,
+    "diastolic": 71,
+    "spo2": 96,
+    "temp": 37.9
+   },
+   "symptoms": "rana superficiala (necesita sutura)",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 94,
+   "tensiune_sistolica": 113,
+   "tensiune_diastolica": 71,
+   "spo2": 96,
+   "temperatura": 37.9,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "rana superficiala (necesita sutura)"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-126",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 88,
+    "systolic": 136,
+    "diastolic": 95,
+    "spo2": 99,
+    "temp": 37.6
+   },
+   "symptoms": "fractura inchisa",
+   "red_flags": [
+    "fracture"
+   ]
+  },
+  "payload_backend": {
+   "puls": 88,
+   "tensiune_sistolica": 136,
+   "tensiune_diastolica": 95,
+   "spo2": 99,
+   "temperatura": 37.6,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": true,
+   "simptome": "fractura inchisa"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-127",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 38,
+    "systolic": 50,
+    "diastolic": 42,
+    "spo2": 69,
+    "temp": 35.6
+   },
+   "symptoms": "hemoragie masiva activa",
+   "red_flags": [
+    "not_breathing"
+   ]
+  },
+  "payload_backend": {
+   "puls": 38,
+   "tensiune_sistolica": 50,
+   "tensiune_diastolica": 42,
+   "spo2": 69,
+   "temperatura": 35.6,
+   "nu_respira": true,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "hemoragie masiva activa"
+  },
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
+  "niveluri_acceptate": [
+   "red"
+  ]
+ },
+ {
+  "id": "A-128",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 63,
+    "systolic": 119,
+    "diastolic": 76,
+    "spo2": 100,
+    "temp": 37.5
+   },
+   "symptoms": "entorsa",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 63,
+   "tensiune_sistolica": 119,
+   "tensiune_diastolica": 76,
+   "spo2": 100,
+   "temperatura": 37.5,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "entorsa"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-129",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 107,
+    "systolic": 108,
+    "diastolic": 95,
+    "spo2": 99,
+    "temp": 38.1
+   },
+   "symptoms": "fractura inchisa",
+   "red_flags": [
+    "fracture"
+   ]
+  },
+  "payload_backend": {
+   "puls": 107,
+   "tensiune_sistolica": 108,
+   "tensiune_diastolica": 95,
+   "spo2": 99,
+   "temperatura": 38.1,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": true,
+   "simptome": "fractura inchisa"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-130",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 79,
+    "systolic": 115,
+    "diastolic": 72,
+    "spo2": 97,
+    "temp": 36.9
+   },
+   "symptoms": "reteta expirata",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 79,
+   "tensiune_sistolica": 115,
+   "tensiune_diastolica": 72,
+   "spo2": 97,
+   "temperatura": 36.9,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "reteta expirata"
+  },
+  "nivel_asteptat": "blue",
+  "scor_baza_asteptat": 10,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-131",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 112,
+    "systolic": 141,
+    "diastolic": 80,
+    "spo2": 97,
+    "temp": 36.3
+   },
+   "symptoms": "fractura inchisa",
+   "red_flags": [
+    "fracture"
+   ]
+  },
+  "payload_backend": {
+   "puls": 112,
+   "tensiune_sistolica": 141,
+   "tensiune_diastolica": 80,
+   "spo2": 97,
+   "temperatura": 36.3,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": true,
+   "simptome": "fractura inchisa"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-132",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 95,
+    "systolic": 142,
+    "diastolic": 98,
+    "spo2": 95,
+    "temp": 39.3
+   },
+   "symptoms": "febra mare cu frison",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 95,
+   "tensiune_sistolica": 142,
+   "tensiune_diastolica": 98,
+   "spo2": 95,
+   "temperatura": 39.3,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "febra mare cu frison"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-133",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 79,
+    "systolic": 131,
+    "diastolic": 90,
+    "spo2": 99,
+    "temp": 36.8
+   },
+   "symptoms": "entorsa",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 79,
+   "tensiune_sistolica": 131,
+   "tensiune_diastolica": 90,
+   "spo2": 99,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "entorsa"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-134",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 79,
+    "systolic": 144,
+    "diastolic": 71,
+    "spo2": 97,
+    "temp": 39.2
+   },
+   "symptoms": "febra mare cu frison",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 79,
+   "tensiune_sistolica": 144,
+   "tensiune_diastolica": 71,
+   "spo2": 97,
+   "temperatura": 39.2,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "febra mare cu frison"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-135",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 83,
+    "systolic": 138,
+    "diastolic": 77,
+    "spo2": 98,
+    "temp": 36.5
+   },
+   "symptoms": "simptome de raceala",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 83,
+   "tensiune_sistolica": 138,
+   "tensiune_diastolica": 77,
+   "spo2": 98,
+   "temperatura": 36.5,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "simptome de raceala"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-136",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 102,
+    "systolic": 107,
+    "diastolic": 71,
+    "spo2": 82,
+    "temp": 38.2
+   },
+   "symptoms": "desaturare SpO2<90%",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 102,
+   "tensiune_sistolica": 107,
+   "tensiune_diastolica": 71,
+   "spo2": 82,
+   "temperatura": 38.2,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "desaturare SpO2<90%"
+  },
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "A-137",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 98,
+    "systolic": 118,
+    "diastolic": 79,
+    "spo2": 97,
+    "temp": 37.5
+   },
+   "symptoms": "rana superficiala (necesita sutura)",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 98,
+   "tensiune_sistolica": 118,
+   "tensiune_diastolica": 79,
+   "spo2": 97,
+   "temperatura": 37.5,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "rana superficiala (necesita sutura)"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-138",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 63,
+    "systolic": 125,
+    "diastolic": 78,
+    "spo2": 96,
+    "temp": 37.3
+   },
+   "symptoms": "simptome de raceala",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 63,
+   "tensiune_sistolica": 125,
+   "tensiune_diastolica": 78,
+   "spo2": 96,
+   "temperatura": 37.3,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "simptome de raceala"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-139",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 115,
+    "systolic": 126,
+    "diastolic": 73,
+    "spo2": 95,
+    "temp": 36.8
+   },
+   "symptoms": "varsaturi incoercibile",
+   "red_flags": [
+    "bleeding"
+   ]
+  },
+  "payload_backend": {
+   "puls": 115,
+   "tensiune_sistolica": 126,
+   "tensiune_diastolica": 73,
+   "spo2": 95,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": true,
+   "fractura": false,
+   "simptome": "varsaturi incoercibile"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-140",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 63,
+    "systolic": 123,
+    "diastolic": 70,
+    "spo2": 97,
+    "temp": 37.2
+   },
+   "symptoms": "problema dermatologica usoara",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 63,
+   "tensiune_sistolica": 123,
+   "tensiune_diastolica": 70,
+   "spo2": 97,
+   "temperatura": 37.2,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "problema dermatologica usoara"
+  },
+  "nivel_asteptat": "blue",
+  "scor_baza_asteptat": 10,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-141",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 97,
+    "systolic": 145,
+    "diastolic": 63,
+    "spo2": 82,
+    "temp": 36.8
+   },
+   "symptoms": "desaturare SpO2<90%",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 97,
+   "tensiune_sistolica": 145,
+   "tensiune_diastolica": 63,
+   "spo2": 82,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "desaturare SpO2<90%"
+  },
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "A-142",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 66,
+    "systolic": 116,
+    "diastolic": 77,
+    "spo2": 98,
+    "temp": 37.6
+   },
+   "symptoms": "febra mica",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 66,
+   "tensiune_sistolica": 116,
+   "tensiune_diastolica": 77,
+   "spo2": 98,
+   "temperatura": 37.6,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "febra mica"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-143",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 85,
+    "systolic": 117,
+    "diastolic": 75,
+    "spo2": 98,
+    "temp": 37.1
+   },
+   "symptoms": "reteta expirata",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 85,
+   "tensiune_sistolica": 117,
+   "tensiune_diastolica": 75,
+   "spo2": 98,
+   "temperatura": 37.1,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "reteta expirata"
+  },
+  "nivel_asteptat": "blue",
+  "scor_baza_asteptat": 10,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-144",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 145,
+    "systolic": 76,
+    "diastolic": 37,
+    "spo2": 63,
+    "temp": 35.5
+   },
+   "symptoms": "stop cardiorespirator",
+   "red_flags": [
+    "not_breathing"
+   ]
+  },
+  "payload_backend": {
+   "puls": 145,
+   "tensiune_sistolica": 76,
+   "tensiune_diastolica": 37,
+   "spo2": 63,
+   "temperatura": 35.5,
+   "nu_respira": true,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "stop cardiorespirator"
+  },
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
+  "niveluri_acceptate": [
+   "red"
+  ]
+ },
+ {
+  "id": "A-145",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 97,
+    "systolic": 117,
+    "diastolic": 94,
+    "spo2": 95,
+    "temp": 39.2
+   },
+   "symptoms": "sangerare controlabila",
+   "red_flags": [
+    "bleeding"
+   ]
+  },
+  "payload_backend": {
+   "puls": 97,
+   "tensiune_sistolica": 117,
+   "tensiune_diastolica": 94,
+   "spo2": 95,
+   "temperatura": 39.2,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": true,
+   "fractura": false,
+   "simptome": "sangerare controlabila"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-146",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 85,
+    "systolic": 131,
+    "diastolic": 76,
+    "spo2": 98,
+    "temp": 36.7
+   },
+   "symptoms": "entorsa",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 85,
+   "tensiune_sistolica": 131,
+   "tensiune_diastolica": 76,
+   "spo2": 98,
+   "temperatura": 36.7,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "entorsa"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-147",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 106,
+    "systolic": 104,
+    "diastolic": 71,
+    "spo2": 88,
+    "temp": 37.5
+   },
+   "symptoms": "desaturare SpO2<90%",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 106,
+   "tensiune_sistolica": 104,
+   "tensiune_diastolica": 71,
+   "spo2": 88,
+   "temperatura": 37.5,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "desaturare SpO2<90%"
+  },
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "A-148",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 87,
+    "systolic": 113,
+    "diastolic": 89,
+    "spo2": 98,
+    "temp": 37.5
+   },
+   "symptoms": "simptome de raceala",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 87,
+   "tensiune_sistolica": 113,
+   "tensiune_diastolica": 89,
+   "spo2": 98,
+   "temperatura": 37.5,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "simptome de raceala"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-149",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 72,
+    "systolic": 126,
+    "diastolic": 73,
+    "spo2": 98,
+    "temp": 36.5
+   },
+   "symptoms": "problema dermatologica usoara",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 72,
+   "tensiune_sistolica": 126,
+   "tensiune_diastolica": 73,
+   "spo2": 98,
+   "temperatura": 36.5,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "problema dermatologica usoara"
+  },
+  "nivel_asteptat": "blue",
+  "scor_baza_asteptat": 10,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-150",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 72,
+    "systolic": 126,
+    "diastolic": 87,
+    "spo2": 98,
+    "temp": 37.0
+   },
+   "symptoms": "simptome de raceala",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 72,
+   "tensiune_sistolica": 126,
+   "tensiune_diastolica": 87,
+   "spo2": 98,
+   "temperatura": 37.0,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "simptome de raceala"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-151",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 115,
+    "systolic": 175,
+    "diastolic": 81,
+    "spo2": 95,
+    "temp": 37.0
+   },
+   "symptoms": "durere toracica severa tip infarct",
+   "red_flags": [
+    "chest_pain"
+   ]
+  },
+  "payload_backend": {
+   "puls": 115,
+   "tensiune_sistolica": 175,
+   "tensiune_diastolica": 81,
+   "spo2": 95,
+   "temperatura": 37.0,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": true,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "durere toracica severa tip infarct"
+  },
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "A-152",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 73,
+    "systolic": 114,
+    "diastolic": 76,
+    "spo2": 100,
+    "temp": 36.9
+   },
+   "symptoms": "reteta expirata",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 73,
+   "tensiune_sistolica": 114,
+   "tensiune_diastolica": 76,
+   "spo2": 100,
+   "temperatura": 36.9,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "reteta expirata"
+  },
+  "nivel_asteptat": "blue",
+  "scor_baza_asteptat": 10,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-153",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 108,
+    "systolic": 128,
+    "diastolic": 73,
+    "spo2": 86,
+    "temp": 37.1
+   },
+   "symptoms": "desaturare SpO2<90%",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 108,
+   "tensiune_sistolica": 128,
+   "tensiune_diastolica": 73,
+   "spo2": 86,
+   "temperatura": 37.1,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "desaturare SpO2<90%"
+  },
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "A-154",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 108,
+    "systolic": 146,
+    "diastolic": 98,
+    "spo2": 98,
+    "temp": 37.3
+   },
+   "symptoms": "durere toracica severa tip infarct",
+   "red_flags": [
+    "chest_pain"
+   ]
+  },
+  "payload_backend": {
+   "puls": 108,
+   "tensiune_sistolica": 146,
+   "tensiune_diastolica": 98,
+   "spo2": 98,
+   "temperatura": 37.3,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": true,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "durere toracica severa tip infarct"
+  },
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "A-155",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 107,
+    "systolic": 110,
+    "diastolic": 83,
+    "spo2": 98,
+    "temp": 39.1
+   },
+   "symptoms": "febra mare cu frison",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 107,
+   "tensiune_sistolica": 110,
+   "tensiune_diastolica": 83,
+   "spo2": 98,
+   "temperatura": 39.1,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "febra mare cu frison"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-156",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 87,
+    "systolic": 124,
+    "diastolic": 79,
+    "spo2": 94,
+    "temp": 36.3
+   },
+   "symptoms": "sangerare controlabila",
+   "red_flags": [
+    "bleeding"
+   ]
+  },
+  "payload_backend": {
+   "puls": 87,
+   "tensiune_sistolica": 124,
+   "tensiune_diastolica": 79,
+   "spo2": 94,
+   "temperatura": 36.3,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": true,
+   "fractura": false,
+   "simptome": "sangerare controlabila"
+  },
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "A-157",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 89,
+    "systolic": 137,
+    "diastolic": 72,
+    "spo2": 99,
+    "temp": 37.8
+   },
+   "symptoms": "rana superficiala (necesita sutura)",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 89,
+   "tensiune_sistolica": 137,
+   "tensiune_diastolica": 72,
+   "spo2": 99,
+   "temperatura": 37.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "rana superficiala (necesita sutura)"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "A-158",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 160,
+    "systolic": 75,
+    "diastolic": 37,
+    "spo2": 60,
+    "temp": 36.2
+   },
+   "symptoms": "stop cardiorespirator",
+   "red_flags": [
+    "not_breathing"
+   ]
+  },
+  "payload_backend": {
+   "puls": 160,
+   "tensiune_sistolica": 75,
+   "tensiune_diastolica": 37,
+   "spo2": 60,
+   "temperatura": 36.2,
+   "nu_respira": true,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "stop cardiorespirator"
+  },
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
+  "niveluri_acceptate": [
+   "red"
+  ]
+ },
+ {
+  "id": "A-159",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 102,
+    "systolic": 161,
+    "diastolic": 70,
+    "spo2": 84,
+    "temp": 37.1
+   },
+   "symptoms": "desaturare SpO2<90%",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 102,
+   "tensiune_sistolica": 161,
+   "tensiune_diastolica": 70,
+   "spo2": 84,
+   "temperatura": 37.1,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "desaturare SpO2<90%"
+  },
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "A-160",
+  "tip": "set_principal",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 98,
+    "systolic": 126,
+    "diastolic": 87,
+    "spo2": 98,
+    "temp": 37.9
+   },
+   "symptoms": "febra mica",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 98,
+   "tensiune_sistolica": 126,
+   "tensiune_diastolica": 87,
+   "spo2": 98,
+   "temperatura": 37.9,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "febra mica"
+  },
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "L-01",
+  "tip": "caz_limita",
+  "nota": "inconstient, fara semne vitale introduse (urgenta: formularul nu trebuie sa blocheze)",
+  "payload_frontend": {
+   "vitals": {},
+   "symptoms": "",
+   "red_flags": [
+    "unconscious"
+   ]
+  },
+  "payload_backend": {
+   "puls": null,
+   "tensiune_sistolica": null,
+   "tensiune_diastolica": null,
+   "spo2": null,
+   "temperatura": null,
+   "nu_respira": false,
+   "inconstient": true,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
+  "niveluri_acceptate": [
+   "red"
+  ]
+ },
+ {
+  "id": "L-02",
+  "tip": "caz_limita",
+  "nota": "nu respira, fara vitale",
+  "payload_frontend": {
+   "vitals": {},
+   "symptoms": "",
+   "red_flags": [
+    "not_breathing"
+   ]
+  },
+  "payload_backend": {
+   "puls": null,
+   "tensiune_sistolica": null,
+   "tensiune_diastolica": null,
+   "spo2": null,
+   "temperatura": null,
+   "nu_respira": true,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
+  "niveluri_acceptate": [
+   "red"
+  ]
+ },
+ {
+  "id": "L-03",
+  "tip": "caz_limita",
+  "nota": "SpO2=89 -> Portocaliu (prag din discutie: <90)",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 80,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 89,
+    "temp": 36.8
+   },
+   "symptoms": "",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 80,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 89,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "L-04",
+  "tip": "caz_limita",
+  "nota": "SpO2=90 -> NU e sub prag",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 80,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 90,
+    "temp": 36.8
+   },
+   "symptoms": "",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 80,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 90,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "L-05",
+  "tip": "caz_limita",
+  "nota": "SpO2=0 (valoare falsy, bug frecvent) -> Portocaliu",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 80,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 0,
+    "temp": 36.8
+   },
+   "symptoms": "",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 80,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 0,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "L-06",
+  "tip": "caz_limita",
+  "nota": "puls=131 -> Portocaliu (prag >130)",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 131,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 98,
+    "temp": 36.8
+   },
+   "symptoms": "",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 131,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 98,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "L-07",
+  "tip": "caz_limita",
+  "nota": "puls=130 -> NU e peste prag",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 130,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 98,
+    "temp": 36.8
+   },
+   "symptoms": "",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 130,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 98,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "L-08",
+  "tip": "caz_limita",
+  "nota": "temperatura 39.0 -> Galben (febra mare)",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 80,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 98,
+    "temp": 39.0
+   },
+   "symptoms": "",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 80,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 98,
+   "temperatura": 39.0,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "L-09",
+  "tip": "caz_limita",
+  "nota": "temperatura 38.9 -> Verde",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 80,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 98,
+    "temp": 38.9
+   },
+   "symptoms": "",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 80,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 98,
+   "temperatura": 38.9,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "L-10",
+  "tip": "caz_limita",
+  "nota": "durere toracica + sangerare -> se alege cel mai grav (Portocaliu)",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 80,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 98,
+    "temp": 36.8
+   },
+   "symptoms": "",
+   "red_flags": [
+    "chest_pain",
+    "bleeding"
+   ]
+  },
+  "payload_backend": {
+   "puls": 80,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 98,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": true,
+   "sangerare_controlabila": true,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "orange",
+  "scor_baza_asteptat": 80,
+  "niveluri_acceptate": [
+   "orange"
+  ]
+ },
+ {
+  "id": "L-11",
+  "tip": "caz_limita",
+  "nota": "nu respira + durere toracica -> Rosu",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 80,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 98,
+    "temp": 36.8
+   },
+   "symptoms": "",
+   "red_flags": [
+    "not_breathing",
+    "chest_pain"
+   ]
+  },
+  "payload_backend": {
+   "puls": 80,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 98,
+   "temperatura": 36.8,
+   "nu_respira": true,
+   "inconstient": false,
+   "durere_toracica_severa": true,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "red",
+  "scor_baza_asteptat": 100,
+  "niveluri_acceptate": [
+   "red"
+  ]
+ },
+ {
+  "id": "L-12",
+  "tip": "caz_limita",
+  "nota": "fractura simpla, vitale normale -> Galben",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 80,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 98,
+    "temp": 36.8
+   },
+   "symptoms": "",
+   "red_flags": [
+    "fracture"
+   ]
+  },
+  "payload_backend": {
+   "puls": 80,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 98,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": true,
+   "simptome": ""
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "yellow",
+  "scor_baza_asteptat": 50,
+  "niveluri_acceptate": [
+   "yellow"
+  ]
+ },
+ {
+  "id": "L-13",
+  "tip": "caz_limita",
+  "nota": "fara semne si vitale normale -> Verde/Albastru",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 80,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 98,
+    "temp": 36.8
+   },
+   "symptoms": "",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 80,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 98,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ },
+ {
+  "id": "L-14",
+  "tip": "caz_limita",
+  "nota": "SpO2=150 invalid -> trebuie respins (4xx), nu acceptat",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 80,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 150,
+    "temp": 36.8
+   },
+   "symptoms": "",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 80,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 150,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 422
+ },
+ {
+  "id": "L-15",
+  "tip": "caz_limita",
+  "nota": "puls negativ -> respins (4xx)",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": -5,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 98,
+    "temp": 36.8
+   },
+   "symptoms": "",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": -5,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 98,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": ""
+  },
+  "expected_http": 422
+ },
+ {
+  "id": "L-16",
+  "tip": "caz_limita",
+  "nota": "text lung in simptome (nu trebuie sa pice serverul)",
+  "payload_frontend": {
+   "vitals": {
+    "pulse": 80,
+    "systolic": 120,
+    "diastolic": 80,
+    "spo2": 98,
+    "temp": 36.8
+   },
+   "symptoms": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "red_flags": []
+  },
+  "payload_backend": {
+   "puls": 80,
+   "tensiune_sistolica": 120,
+   "tensiune_diastolica": 80,
+   "spo2": 98,
+   "temperatura": 36.8,
+   "nu_respira": false,
+   "inconstient": false,
+   "durere_toracica_severa": false,
+   "sangerare_controlabila": false,
+   "fractura": false,
+   "simptome": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  "expected_http": 200,
+  "nivel_asteptat": "green",
+  "scor_baza_asteptat": 20,
+  "niveluri_acceptate": [
+   "green",
+   "blue"
+  ]
+ }
+]

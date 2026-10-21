@@ -1,0 +1,61 @@
+token,minut_sosire,varsta,tas,tad,puls,spo2,temperatura,stop_respirator_inconstienta,durere_toracica_sau_spo2_sub_90,sangerare_sau_fractura,fara_semne_alarma,motiv_sintetic,categorie_asteptata,scor_baza_asteptat
+A-101,0,86,136,90,99,98,37.2,0,0,0,1,entorsa,Verde,20
+A-102,3,37,119,83,80,99,37.0,0,0,1,0,fractura inchisa,Galben,50
+A-103,5,91,124,81,65,99,36.6,0,0,0,1,problema dermatologica usoara,Albastru,10
+A-104,10,30,110,84,119,83,36.7,0,1,0,0,desaturare SpO2<90%,Portocaliu,80
+A-105,10,29,148,85,78,94,39.5,0,0,0,0,febra mare cu frison,Galben,50
+A-106,11,35,141,85,88,98,38.0,0,0,1,0,varsaturi incoercibile,Galben,50
+A-107,16,53,114,77,83,99,37.0,0,0,0,1,durere cronica de saptamani,Albastru,10
+A-108,16,21,121,77,64,100,36.4,0,0,0,1,reteta expirata,Albastru,10
+A-109,21,61,130,75,87,100,36.3,0,0,0,1,febra mica,Verde,20
+A-110,26,36,138,81,110,99,39.6,0,0,1,0,fractura inchisa,Galben,50
+A-111,28,66,145,65,124,92,36.0,0,1,0,0,durere toracica severa tip infarct,Portocaliu,80
+A-112,33,79,134,75,92,96,37.8,0,0,0,1,simptome de raceala,Verde,20
+A-113,33,78,117,74,98,99,36.8,0,0,1,0,durere moderata 5-7/10,Galben,50
+A-114,34,9,120,85,61,96,37.9,0,0,0,1,simptome de raceala,Verde,20
+A-115,39,18,120,70,80,98,37.9,0,0,1,0,fractura inchisa,Galben,50
+A-116,40,71,114,85,95,97,36.7,0,0,0,1,febra mica,Verde,20
+A-117,40,33,62,39,161,71,35.6,1,0,0,0,hemoragie masiva activa,Rosu,100
+A-118,45,30,119,69,96,93,38.3,0,0,1,0,sangerare controlabila,Galben,50
+A-119,47,11,110,72,82,97,36.5,0,0,0,1,reteta expirata,Albastru,10
+A-120,48,62,82,37,38,66,35.8,1,0,0,0,hemoragie masiva activa,Rosu,100
+A-121,50,56,156,91,87,93,36.5,0,0,1,0,varsaturi incoercibile,Galben,50
+A-122,53,45,176,96,136,88,36.2,0,1,0,0,desaturare SpO2<90%,Portocaliu,80
+A-123,54,56,135,73,67,98,36.5,0,0,0,1,durere cronica de saptamani,Albastru,10
+A-124,57,72,116,82,104,94,39.3,0,0,1,0,fractura inchisa,Galben,50
+A-125,58,54,113,71,94,96,37.9,0,0,0,1,rana superficiala (necesita sutura),Verde,20
+A-126,59,50,136,95,88,99,37.6,0,0,1,0,fractura inchisa,Galben,50
+A-127,60,26,50,42,38,69,35.6,1,0,0,0,hemoragie masiva activa,Rosu,100
+A-128,62,9,119,76,63,100,37.5,0,0,0,1,entorsa,Verde,20
+A-129,67,12,108,95,107,99,38.1,0,0,1,0,fractura inchisa,Galben,50
+A-130,70,17,115,72,79,97,36.9,0,0,0,1,reteta expirata,Albastru,10
+A-131,73,86,141,80,112,97,36.3,0,0,1,0,fractura inchisa,Galben,50
+A-132,76,18,142,98,95,95,39.3,0,0,0,0,febra mare cu frison,Galben,50
+A-133,76,60,131,90,79,99,36.8,0,0,0,1,entorsa,Verde,20
+A-134,78,10,144,71,79,97,39.2,0,0,0,0,febra mare cu frison,Galben,50
+A-135,83,85,138,77,83,98,36.5,0,0,0,1,simptome de raceala,Verde,20
+A-136,88,21,107,71,102,82,38.2,0,1,0,0,desaturare SpO2<90%,Portocaliu,80
+A-137,90,66,118,79,98,97,37.5,0,0,0,1,rana superficiala (necesita sutura),Verde,20
+A-138,90,2,125,78,63,96,37.3,0,0,0,1,simptome de raceala,Verde,20
+A-139,95,92,126,73,115,95,36.8,0,0,1,0,varsaturi incoercibile,Galben,50
+A-140,96,71,123,70,63,97,37.2,0,0,0,1,problema dermatologica usoara,Albastru,10
+A-141,96,47,145,63,97,82,36.8,0,1,0,0,desaturare SpO2<90%,Portocaliu,80
+A-142,101,21,116,77,66,98,37.6,0,0,0,1,febra mica,Verde,20
+A-143,102,44,117,75,85,98,37.1,0,0,0,1,reteta expirata,Albastru,10
+A-144,105,30,76,37,145,63,35.5,1,0,0,0,stop cardiorespirator,Rosu,100
+A-145,106,5,117,94,97,95,39.2,0,0,1,0,sangerare controlabila,Galben,50
+A-146,108,46,131,76,85,98,36.7,0,0,0,1,entorsa,Verde,20
+A-147,110,6,104,71,106,88,37.5,0,1,0,0,desaturare SpO2<90%,Portocaliu,80
+A-148,113,79,113,89,87,98,37.5,0,0,0,1,simptome de raceala,Verde,20
+A-149,116,2,126,73,72,98,36.5,0,0,0,1,problema dermatologica usoara,Albastru,10
+A-150,121,42,126,87,72,98,37.0,0,0,0,1,simptome de raceala,Verde,20
+A-151,123,72,175,81,115,95,37.0,0,1,0,0,durere toracica severa tip infarct,Portocaliu,80
+A-152,128,74,114,76,73,100,36.9,0,0,0,1,reteta expirata,Albastru,10
+A-153,133,79,128,73,108,86,37.1,0,1,0,0,desaturare SpO2<90%,Portocaliu,80
+A-154,134,86,146,98,108,98,37.3,0,1,0,0,durere toracica severa tip infarct,Portocaliu,80
+A-155,135,88,110,83,107,98,39.1,0,0,0,0,febra mare cu frison,Galben,50
+A-156,138,80,124,79,87,94,36.3,0,0,1,0,sangerare controlabila,Galben,50
+A-157,141,65,137,72,89,99,37.8,0,0,0,1,rana superficiala (necesita sutura),Verde,20
+A-158,144,30,75,37,160,60,36.2,1,0,0,0,stop cardiorespirator,Rosu,100
+A-159,147,87,161,70,102,84,37.1,0,1,0,0,desaturare SpO2<90%,Portocaliu,80
+A-160,152,66,126,87,98,98,37.9,0,0,0,1,febra mica,Verde,20

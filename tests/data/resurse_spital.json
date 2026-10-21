@@ -1,0 +1,95 @@
+{
+ "sectii": [
+  {
+   "id": "RESUS",
+   "nume": "Sala resuscitare",
+   "paturi": [
+    "R1",
+    "R2"
+   ],
+   "medici": [
+    "Dr.1"
+   ]
+  },
+  {
+   "id": "CRIT",
+   "nume": "Cazuri critice",
+   "paturi": [
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+   ],
+   "medici": [
+    "Dr.2",
+    "Dr.3"
+   ]
+  },
+  {
+   "id": "GEN",
+   "nume": "Consultatii generale",
+   "paturi": [
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+   ],
+   "medici": [
+    "Dr.4",
+    "Dr.5"
+   ]
+  },
+  {
+   "id": "MIN",
+   "nume": "Cazuri minore",
+   "paturi": [
+    "M1",
+    "M2",
+    "M3"
+   ],
+   "medici": [
+    "Dr.6"
+   ]
+  }
+ ],
+ "muchii": [
+  [
+   "TRIAJ",
+   "RESUS"
+  ],
+  [
+   "TRIAJ",
+   "CRIT"
+  ],
+  [
+   "TRIAJ",
+   "GEN"
+  ],
+  [
+   "TRIAJ",
+   "MIN"
+  ],
+  [
+   "RESUS",
+   "CRIT"
+  ],
+  [
+   "CRIT",
+   "GEN"
+  ],
+  [
+   "GEN",
+   "MIN"
+  ]
+ ],
+ "regula_rutare_sugerata": {
+  "Rosu": "RESUS",
+  "Portocaliu": "CRIT",
+  "Galben": "GEN",
+  "Verde": "MIN",
+  "Albastru": "MIN"
+ },
+ "nota": "Daca sectia tinta e plina, BFS spre cea mai apropiata sectie cu pat liber"
+}
